@@ -5,11 +5,13 @@ Home: https://github.com/deepmodeling/dpgen
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dpgen-feedstock/blob/master/LICENSE.txt)
 
 Summary: The deep potential generator
 
+Development: https://github.com/deepmodeling/dpgen
 
+Documentation: https://github.com/deepmodeling/dpgen
 
 Current build status
 ====================
