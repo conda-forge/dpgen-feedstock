@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
     - pip
-    - setuptools_scm
-    - m2r
+    - setuptools >=6.1
+    - setuptools_scm >=6.2
   run:
-    - python >=3.5
+    - python >=3.8
     - numpy >=1.14.3
     - dpdata >=0.1.10
     - pymatgen >=2019.1.13,<=2022.7.19
@@ -35,6 +35,9 @@ requirements:
     - gromacswrapper >=0.8.0
     - dpdispatcher >=0.3.11
     - netcdf4
+    - dargs >=0.2.9
+    - h5py
+    - pymatgen-analysis-defects
 
 test:
   imports:
@@ -48,7 +51,7 @@ about:
   license_family: LGPL
   license_file: LICENSE
   summary: The deep potential generator
-  doc_url: https://github.com/deepmodeling/dpgen
+  doc_url: https://docs.deepmodeling.com/projects/dpgen/
   dev_url: https://github.com/deepmodeling/dpgen
 
 extra:
