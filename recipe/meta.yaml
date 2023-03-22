@@ -1,5 +1,5 @@
 {% set name = "dpgen" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deepmodeling/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 8e739bfa4c3830274670bc32019489a0a62fa2046b9c9fec5455ff5e23a4910a
+  sha256: 4e7cd006cc28e2af464b497eceb760ba715b304c4f0efa6de17717f986cd386e
 
 build:
   number: 0
