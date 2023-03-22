@@ -26,7 +26,7 @@ requirements:
     - python >=3.8
     - numpy >=1.14.3
     - dpdata >=0.2.6,!=0.2.11
-    - pymatgen >=2022.7.19
+    - pymatgen >=2022.11.1
     - ase
     - monty >2.0.0
     - paramiko
@@ -38,6 +38,7 @@ requirements:
     - dargs >=0.2.9
     - h5py
     - pymatgen-analysis-defects
+    - packaging
 
 test:
   imports:
