@@ -1,5 +1,5 @@
 {% set name = "dpgen" %}
-{% set version = "0.11.1" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deepmodeling/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4e7cd006cc28e2af464b497eceb760ba715b304c4f0efa6de17717f986cd386e
+  sha256: 784c864f5345b4c7bd473f297189ead328d1e5d69debc4095e26670f60c00ddb
 
 build:
   number: 0
@@ -18,14 +18,14 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
-    - setuptools >=6.1
+    - setuptools >=61
     - setuptools_scm >=6.2
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy >=1.14.3
-    - dpdata >=0.2.6,!=0.2.11
+    - dpdata >=0.2.16
     - pymatgen >=2022.11.1
     - ase
     - monty >2.0.0
@@ -35,7 +35,7 @@ requirements:
     - gromacswrapper >=0.8.0
     - dpdispatcher >=0.3.11
     - netcdf4
-    - dargs >=0.2.9
+    - dargs >=0.4.0
     - h5py
     - pymatgen-analysis-defects
     - packaging
