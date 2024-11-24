@@ -1,5 +1,6 @@
 {% set name = "dpgen" %}
 {% set version = "0.13.0" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -18,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools >=61
     - setuptools_scm >=6.2
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy >=1.14.3
     - dpdata >=0.2.16
     - pymatgen >=2022.11.1
@@ -41,6 +42,8 @@ requirements:
     - packaging
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dpgen
   commands:
